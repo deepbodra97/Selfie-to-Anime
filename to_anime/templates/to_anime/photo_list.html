@@ -25,12 +25,23 @@
 		var canvasData;
 		$("#modalCrop").on("shown.bs.modal", function () {
 			$image.cropper({
-				viewMode: 1,
-				aspectRatio: 1/1,
-				cropBoxResizable: true,
+				strict: true,
+        cropBoxResizable:false,
+        autoCropArea: 0,
+        resize:false,
+        strict: false,
+       
+        highlight: false,
+        dragCrop: false,
+        zoomable: false,
+        zoomOnTouch: false,
+        zoomOnWheel: false,
+        // viewMode: 3,
+       
+        dragMode: 3,
 				ready: function () {
 					$image.cropper("setCanvasData", canvasData);
-					$image.cropper("setCropBoxData", cropBoxData);
+					$image.cropper("setCropBoxData", { width: 256, height: 256 });
 				}
 			});
 		}).on("hidden.bs.modal", function () {
@@ -55,8 +66,8 @@ $(".js-zoom-out").click(function () {
 				var cropData = $image.cropper("getData");
 				$("#id_x").val(cropData["x"]);
 				$("#id_y").val(cropData["y"]);
-				$("#id_height").val(cropData["height"]);
-				$("#id_width").val(cropData["width"]);
+				$("#id_height").val(256);
+				$("#id_width").val(256);
 				$("#formUpload").submit();
 			});
 

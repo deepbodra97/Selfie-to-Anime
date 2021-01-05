@@ -28,9 +28,10 @@ class PhotoForm(forms.ModelForm):
         filename, file_extension = os.path.splitext(photo.file.path)
 
         image = Image.open(photo.file)
-        image.save(filename+'-o'+file_extension)
+        # image.save(filename+'-o'+file_extension)
 
         cropped_image = image.crop((x, y, w+x, h+y))
+        cropped_image.save(filename+'-o'+file_extension)
         anime_image = array_to_img(predict(cropped_image), scale=False)
         anime_image.save(photo.file.path)
         return photo

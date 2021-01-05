@@ -10,6 +10,7 @@ To convert an image of a human face into an anime face using CycleGAN with Atten
 1. Train Set
 
 ![Cherry picked results on train set](https://github.com/deepbodra97/Selfie-to-Anime/blob/master/media/result_train.png)
+
 2. Test Set
 
 ![Cherry picked results on test set](https://github.com/deepbodra97/Selfie-to-Anime/blob/master/media/result_test.png)

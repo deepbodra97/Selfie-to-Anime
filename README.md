@@ -3,7 +3,7 @@
 To convert an image of a human face into an anime face using CycleGAN with Attention Layer in the discriminator model
 
 # Demo
-[![Demo](https://github.com/deepbodra97/Database-System-Implementation/blob/master/P5:%20DeepDB/Database%20System%20Implementation%20(Demo).mp4%20-%20VLC%20media%20player%2024-04-2020%2000_08_41.png)](https://www.youtube.com/watch?v=x9PuqaW_HBE)
+[![Demo](https://github.com/deepbodra97/Selfie-to-Anime/blob/master/media/teaser.png)](https://www.youtube.com/watch?v=x9PuqaW_HBE)
 
 
 # Results

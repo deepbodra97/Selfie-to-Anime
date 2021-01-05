@@ -1,5 +1,5 @@
 
-# # Selfie-to-Anime
+# Selfie-to-Anime
 To convert an image of a human face into an anime face using CycleGAN with Attention Layer in the discriminator model
 
 # Demo
